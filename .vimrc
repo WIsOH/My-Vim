@@ -1,3 +1,5 @@
+execute pathogen#infect()
+set cc=80
 set autoindent
 set linebreak
 set showbreak=+++ 	
@@ -10,5 +12,8 @@ set smartindent
 set smarttab
 set softtabstop=4
 set nocompatible
+set background=dark
+syntax on
+filetype plugin indent on
 inoremap jk <esc>
-colorscheme herald
+colorscheme solarized
