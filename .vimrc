@@ -3,9 +3,8 @@ set cc=80
 set autoindent
 set linebreak
 set showbreak=+++ 	
-set textwidth=100
+set textwidth=85
 set showmatch
-set t_Co=256
 set number
 set shiftwidth=4
 set smartindent
@@ -15,5 +14,8 @@ set nocompatible
 set background=dark
 syntax on
 filetype plugin indent on
+nnoremap GG 1G
 inoremap jk <esc>
-colorscheme solarized
+if has('gui_running')
+    set colorscheme=solarized
+endif
